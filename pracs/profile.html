@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Мой профиль</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/profile.css">
+</head>
+<body>
+<header>
+    <div class="header__title">
+        <img class="header__logo" src="assets/logo.png" alt="Logo.png">
+        <h1 id="mainTitle">Мой профиль</h1>
+    </div>
+    <nav class="header__nav">
+        <a class="nav__link" href="./profile.html">Мой профиль</a>
+        <a class="nav__link" href="./index.html">Мои книги</a>
+        <a class="nav__link" href="#basket">Корзина</a>
+    </nav>
+</header>
+
+<main class="main_container">
+    <article class="profile_update">
+        <form class="profile_update__form">
+            <h2>Редактирования профиля</h2>
+            <fieldset class="fieldset_main">
+                <legend>Основная информация</legend>
+
+                <div class="field">
+                    <label for="name">Имя</label>
+                    <input type="text" name="name" class="field__input" placeholder="Имя" id="name" required>
+                </div>
+                <div class="field">
+                    <label for="email">Электронная почта</label>
+                    <input type="email" name="email" class="field__input" placeholder="Электронная почта" id="email"
+                           pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required>
+                </div>
+                <div class="field">
+                    <label for="tel">Телефон</label>
+                    <input type="tel" name="tel" class="field__input" placeholder="Телефон" id="tel"
+                           pattern="\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})">
+                </div>
+                <div class="field">
+                    <label>Пол</label>
+                    <div>
+                        <label>Мужской: <input type="radio" name="gender" value="male" checked></label>
+                        <label>Женский: <input type="radio" name="gender" value="female"></label>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="birthday">День рождения</label>
+                    <input type="date" name="birthday" class="field__input" placeholder="День рождения" id="birthday" max="2004-10-11">
+                </div>
+            </fieldset>
+
+            <fieldset class="fieldset_password">
+                <legend>Пароль</legend>
+                <div class="field">
+                    <label for="old_password">Старый пароль</label>
+                    <input type="password" name="old_password" class="field__input" placeholder="Старый пароль"
+                           id="old_password">
+                </div>
+                <div class="field">
+                    <label for="new_password">Новый пароль</label>
+                    <input type="password" name="new_password" class="field__input" placeholder="Новый пароль"
+                           id="new_password">
+                </div>
+            </fieldset>
+
+            <fieldset class="fieldset_photo">
+                <legend>Информация о себе</legend>
+                <div class="field">
+                    <label for="avatar">Фото профиля</label>
+                    <input type="file" name="avatar" class="field__input"
+                           id="avatar">
+                </div>
+                <div class="field">
+                    <label>Интересы</label>
+                    <div>
+                        <label>Фентези <input type="checkbox" name="interests" value="fantasy" checked></label>
+                        <label>Фантастика <input type="checkbox" name="interests" value="fantastic"></label>
+                        <label>Детектив <input type="checkbox" name="interests" value="detective"></label>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="about_me">О себе</label>
+                    <textarea name="about_me" id="about_me" cols="30" rows="3" placeholder="I like programming..."></textarea>
+                </div>
+                <div class="field">
+                    <label for="country">Страна</label>
+                    <select name="country" id="country">
+                        <option value="russia">Россия</option>
+                        <option value="usa">США</option>
+                        <option value="france">Франция</option>
+                        <option value="uk">Великобритания</option>
+                        <option value="china">Китай</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="submit-button">Submit</button>
+            <button class="cancel-button">Cancel</button>
+        </form>
+    </article>
+</main>
+</body>
+</html>

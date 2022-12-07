@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Книжный магазин</title>
+    <link rel="icon" type="image/png" href="https://www.chitai-gorod.ru/ii/img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="styles/notification_dropdown.css">
+    <link rel="stylesheet" href="styles/socials.css"/>
+    <link rel="stylesheet" href="styles/cart.css">
+    <link rel="stylesheet" href="styles/notification.css">
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+
+    <script src="https://kit.fontawesome.com/14b6ee3d8c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="center-img" style="display: none">
+    <img src="./assets/cat.jpg" alt="cat" id="center-img">
+</div>
+
+<div class="notification-dropdown">
+    <div class="notification__body">
+        <div class="notification__item">
+            Мои книги
+        </div>
+        <div class="notification__item" id="notification-actions">
+            Акции
+        </div>
+    </div>
+    <div class="notification__header" id="notification-header">
+        <span class="notification__icon material-symbols-outlined" id="notification-btn">notifications</span>
+    </div>
+</div>
+
+<header>
+    <div class="header__title">
+        <img class="header__logo" src="assets/logo.png" alt="Logo.png">
+    </div>
+    <nav class="header__nav">
+        <a class="nav__link" href="./profile.html">Мой профиль</a>
+        <a class="nav__link" href="./index.html">Мои книги</a>
+        <a class="nav__link droppable" href="#cart" id="cart-toggle">Корзина</a>
+    </nav>
+
+
+    <input type="checkbox" class="burger-menu-checkbox" id="burger-menu-toggle"/>
+    <label id="burger-menu-open" for="burger-menu-toggle">
+        <span class="material-symbols-outlined header__dropdown_button">menu</span>
+    </label>
+    <label id="burger-menu-close" for="burger-menu-toggle">
+        <span class="material-symbols-outlined header__dropdown_button">close</span>
+    </label>
+    <div class="header__burger-menu">
+        <a href="./profile.html" class="burger-menu__link">Мой профиль</a>
+        <a href="./index.html" class="burger-menu__link">Мои книги</a>
+        <a href="#basket" class="burger-menu__link">Корзина</a>
+    </div>
+</header>
+<!-- Блок с жанрами -->
+<div class="main_container">
+    <main>
+        <article class="book_block">
+
+            <img
+                    class="book_img"
+                    src="https://cv7.litres.ru/pub/c/audiokniga/cover_330/66206578-govard-lavkraft-hrebty-bezumiya-66206578.jpg"
+                    alt="Обложка"
+            >
+            <div>
+                <section class="book_title">
+                    <p>
+                        <b><cite>Хребты безумия</cite></b><br>
+                        Автор: <i><u>Говард Лавкрафт</u></i><br>
+                        Из серии: <i><u>Классика на все времена</u></i>
+                        Рейтинг: 4<sup>/5</sup>
+                    </p>
+                </section>
+
+                <section class="book_desc">
+                    <b>Описание книги</b><br>
+
+                    <blockquote> Когда-то Землю населяли удивительные существа. Они создавали цивилизации и возводили
+                        города.
+                        Они были могущественны, эрудированы и умны. Пока не столкнулись с чем-то жестоким и невообразимо
+                        злым.
+                        Древняя цивилизация погибла, но их послания будущему человечеству сохранились, оставшись
+                        запертыми в
+                        леднике, до тех пор, пока люди не отправились в Арктику и случайно не обнаружили город. Город
+                        окруженный
+                        гигантскими скальными массивами, более известными как: Хребты безумия.
+                    </blockquote>
+
+                    <p>
+                        Не пропустите аудиоверсию повести «Хребты безумия» – одного из величайших произведений
+                        американской
+                        литературы. Кроме того, в сборник вошли еще две новеллы Лавкрафта: «Модель Пикмана» и «Музыка
+                        Эриха
+                        Цанна».
+                    </p>
+                    <button class="read-more-button">Читать больше</button>
+                </section>
+
+                <section class="book_info">
+                    <b>Информация: </b>
+                    <p>Цена: бесплатно</p>
+                    <button
+                            class="buy-button"
+                            onclick="showNotification({
+                                title: 'Успешно',
+                                text: 'Спасибо за покупку!'
+                            })"
+                    >Книга на ЛитРес!
+                    </button>
+                </section>
+
+                <section class="like_section">
+                    <button class="like_btn" id="like-canvas-toggle"><i class="fa-solid fa-heart"></i> <span>2</span>
+                    </button>
+                    <button class="like_btn"><i class="fa-solid fa-heart"></i> <span>1</span></button>
+                    <button class="like_btn"><i class="fa-solid fa-heart"></i> <span>5</span></button>
+
+                    <div class="like_canvas" id="like-canvas"></div>
+                </section>
+
+                <section class="contents_section">
+                    <p><strong>Жанры</strong></p>
+                    <div id="contents"></div>
+                </section>
+            </div>
+        </article>
+
+        <article class="book_block">
+            <section class="list_section" id="list_section">
+                <button id="list-btn">Создать список</button>
+            </section>
+        </article>
+
+        <article class="book_block">
+            <div class="gallery">
+                <div class="gallery__books" id="gallery__books"></div>
+                <div class="gallery__main-book" id="gallery__main-book"></div>
+            </div>
+        </article>
+
+        <article class="book_block">
+            <button id="animate-slider-1" style="margin-bottom: 10px;">Анимировать</button>
+            <div class="slider" id="slider">
+                <div class="slider__item" id="slider__item"></div>
+            </div>
+        </article>
+    </main>
+
+    <div class="aside">
+        <aside class="genres_nav">
+            <h2 id="genres">Жанры</h2>
+            <ol type="I">
+                <li class="genres__list-item">
+                    <div class="genres__item-title"><strong>Легкое чтение</strong></div>
+
+                    <ul>
+                        <li class="genres__link"><i>Фентези</i></li>
+                        <li class="genres__link"><i>Детективы</i></li>
+                        <li class="genres__link"><i>Фантакстика</i></li>
+                    </ul>
+                </li>
+                <li class="genres__list-item">
+                    <div class="genres__item-title"><strong>Знания и навыки</strong></div>
+                    <ul>
+                        <li class="genres__link"><i>Саморазвитие / личностный рост</i></li>
+                        <li class="genres__link"><i>Бизнес-книги</i></li>
+                        <li class="genres__link"><i>Учебная и научная литература</i></li>
+                    </ul>
+                </li>
+            </ol>
+        </aside>
+        <article class="media">
+            <iframe src="./video.html" title="Promo"></iframe>
+        </article>
+    </div>
+</div>
+
+<!-- Подвал -->
+<footer>
+    <img class="footer__logo" src="https://www.litres.ru/static/litres/i/footer/logo-gray.svg" alt="Logo_footer.svg">
+    <div class="footer__contacts">
+        <address>
+            <em>Контакты: </em> <br>
+            <a href="mailto:zakatov.igor@yandex.ru">zakatov.igor@yandex.ru</a> <br>
+            <a href="tel:89999999999">8 (999) 999 99-99</a>
+        </address>
+    </div>
+    <div class="footer__links">
+        Ссылки:
+        <a href="#mainTitle">Начало</a>
+        <a href="#genres">Жанры</a>
+        <div class="footer__socials">
+            <p class="socials__title">Мы в соц. сетях</p>
+            <div class="socials__btns">
+                <button class="social__btn"><i class="fa-brands fa-vk"></i></button>
+                <button class="social__btn"><i class="fa-brands fa-twitter"></i></button>
+                <button class="social__btn"><i class="fa-brands fa-telegram"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="footer__partners">
+        Партнёры:<br>
+        <a href="https://www.ozon.ru/" target="_blank">
+            <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/7/7e/%D0%9E%D0%97%D0%9E%D0%9D_%D0%9B%D0%9E%D0%93%D0%9E.png"
+                    alt=""
+                    width="100"
+            >
+        </a>
+        <br>
+    </div>
+    <sub class="footer__company">© <abbr>ООО</abbr> «ЛитРес»</sub>
+</footer>
+
+<div class="cart close" id="cart">
+    <div class="cart__content">
+        <div class="cart__title">Корзина</div>
+        <form class="cart__filter-form" id="cart-filter-form">
+            <div class="filter__form-filter">
+                <label class="filter-label">
+                    От: <input type="number" class="cart__input" id="cart-input-price-from" name="from-price">
+                </label>
+                <label class="filter-label">
+                    До: <input type="number" class="cart__input" id="cart-input-price-to" name="to-price">
+                </label>
+            </div>
+
+            <div class="filter-form__sort">
+                <input type="radio" name="sort-type" id="checkbox-sort-default" class="filter-radio" value="default">
+                <label class="sort-label" for="checkbox-sort-default">
+                    <i class="fa-solid fa-sort"></i>
+                </label>
+
+                <input type="radio" name="sort-type" id="checkbox-sort-desc" class="filter-radio" value="sort-desc">
+                <label class="sort-label" for="checkbox-sort-desc">
+                    <i class="fa-solid fa-arrow-down-wide-short"></i>
+                </label>
+
+                <input type="radio" name="sort-type" id="checkbox-sort" class="filter-radio" value="sort">
+                <label class="sort-label" for="checkbox-sort">
+                    <i class="fa-solid fa-arrow-down-short-wide"></i>
+                </label>
+            </div>
+
+            <button type="submit" class="filter-form__submit">Показать</button>
+        </form>
+        <div class="cart__body" id="cart-body"></div>
+        <div class="cart__info" id="cart-info"></div>
+        <div class="cart__action">
+            <button class="cart__btn" id="cart-add">Добавить</button>
+        </div>
+    </div>
+</div>
+
+<script src="scripts/books.js"></script>
+<script src="scripts/cart_2.js"></script>
+<script src="scripts/script.js"></script>
+<!--<script src="scripts/notification.js"></script>-->
+<script src="scripts/showNotification.js"></script>
+<script src="scripts/list.js"></script>
+<script src="scripts/contents.js"></script>
+<script src="scripts/books_gallery.js"></script>
+<script src="scripts/slider.js"></script>
+<script src="scripts/dragNDropCart.js"></script>
+<script src="scripts/animate.js"></script>
+</body>
+</html>

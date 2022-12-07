@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="./contact-form.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+<div class="container">
+    <form class="form">
+        <h1 class="form__title">Contact</h1>
+
+        <div class="form__body">
+            <label class="form__field">
+                <input type="text" class="form__input" placeholder="_">
+                <span>Имя</span>
+            </label>
+            <label class="form__field">
+                <input type="text" class="form__input" placeholder="_">
+                <span>Фамилия</span>
+            </label>
+            <label class="form__field">
+                <input type="email" class="form__input" placeholder="_">
+                <span>Почта</span>
+            </label>
+            <label class="form__field">
+                <input type="tel" class="form__input" placeholder="_">
+                <span>Телефон</span>
+            </label>
+            <label class="form__field message">
+                <input type="text" class="form__input" placeholder="_">
+                <span>Напишите ваше сообщение здесь</span>
+            </label>
+        </div>
+
+        <button type="submit" class="form__submit" id="submit-btn" disabled>Отправить</button>
+        <button type="button" class="form__submit" id="captcha-btn">Ввести капчу</button>
+    </form>
+</div>
+
+<div class="captcha close" id="captcha">
+    <form class="captcha__body" id="captcha-form">
+        <p class="captcha__text">Капча: </p>
+        <label class="form__field">
+            <input type="text" class="form__input" name="captcha" placeholder="_">
+            <span>Введите капчу</span>
+        </label>
+        <button type="submit" class="form__submit">Отправить</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

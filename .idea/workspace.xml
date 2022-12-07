@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bd407f37-6b55-4451-a853-c0ea1d455bd1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="2EiBFZs2hmiT9Xq0KXC3pxLS4WZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\zakat\WebstormProjects\rkcir\prac1\assets" />
+      <recent name="C:\Users\zakat\WebstormProjects\rkcir\prac1\blocks" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zakat\WebstormProjects\rkcir\prac1\scripts" />
+      <recent name="C:\Users\zakat\WebstormProjects\rkcir\prac1\blocks" />
+      <recent name="C:\Users\zakat\WebstormProjects\rkcir\prac1\gallery" />
+      <recent name="C:\Users\zakat\WebstormProjects\rkcir\prac1\styles" />
+      <recent name="C:\Users\zakat\WebstormProjects\rkcir\prac1\assets" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bd407f37-6b55-4451-a853-c0ea1d455bd1" name="Default Changelist" comment="" />
+      <created>1663068421446</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663068421446</updated>
+      <workItem from="1663068422533" duration="7789000" />
+      <workItem from="1663396665024" duration="23000" />
+      <workItem from="1663396734390" duration="4000" />
+      <workItem from="1663404614912" duration="13000" />
+      <workItem from="1663677130522" duration="5377000" />
+      <workItem from="1663735175505" duration="594000" />
+      <workItem from="1663764378991" duration="47000" />
+      <workItem from="1664282035644" duration="3685000" />
+      <workItem from="1665487919431" duration="8238000" />
+      <workItem from="1665600679902" duration="606000" />
+      <workItem from="1666087756482" duration="3913000" />
+      <workItem from="1666202938885" duration="36000" />
+      <workItem from="1666612506439" duration="18890000" />
+      <workItem from="1666694975375" duration="8849000" />
+      <workItem from="1666704253997" duration="6000" />
+      <workItem from="1667195851056" duration="139000" />
+      <workItem from="1667196490827" duration="2239000" />
+      <workItem from="1667222436565" duration="13805000" />
+      <workItem from="1667299209827" duration="2655000" />
+      <workItem from="1667732036052" duration="6186000" />
+      <workItem from="1667818219789" duration="5460000" />
+      <workItem from="1667906711565" duration="826000" />
+      <workItem from="1668431828318" duration="117000" />
+      <workItem from="1668440737135" duration="1509000" />
+      <workItem from="1668507159978" duration="6031000" />
+      <workItem from="1668585928471" duration="416000" />
+      <workItem from="1669034769186" duration="4715000" />
+      <workItem from="1669115998998" duration="1723000" />
+      <workItem from="1669144383020" duration="46000" />
+      <workItem from="1669393494379" duration="607000" />
+      <workItem from="1669619152430" duration="13290000" />
+      <workItem from="1669637894628" duration="46000" />
+      <workItem from="1669655759182" duration="27000" />
+      <workItem from="1669721130503" duration="1129000" />
+      <workItem from="1670064397677" duration="132000" />
+      <workItem from="1670069321577" duration="1858000" />
+      <workItem from="1670085742605" duration="44000" />
+      <workItem from="1670149442624" duration="836000" />
+      <workItem from="1670169752546" duration="6734000" />
+      <workItem from="1670221036169" duration="3312000" />
+      <workItem from="1670244916471" duration="3190000" />
+      <workItem from="1670331799814" duration="982000" />
+      <workItem from="1670400565068" duration="82000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="395" y="87" key="#Inspections" timestamp="1665492128559">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="395" y="87" key="#Inspections/0.0.1536.816@0.0.1536.816" timestamp="1665492128559" />
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1670064528856">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1670064528856" />
+    <state x="645" y="310" width="245" height="267" key="Github.ShareDialog" timestamp="1670400630217">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="645" y="310" width="245" height="267" key="Github.ShareDialog/0.0.1536.816@0.0.1536.816" timestamp="1670400630217" />
+    <state x="277" y="53" key="SettingsEditor" timestamp="1666636801416">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="277" y="53" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1666636801416" />
+    <state x="93" y="93" width="1350" height="630" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1667195990302">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="93" y="93" width="1350" height="630" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.816@0.0.1536.816" timestamp="1667195990302" />
+    <state x="379" y="45" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1663072569436">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="379" y="45" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.816@0.0.1536.816" timestamp="1663072569436" />
+    <state x="480" y="125" width="576" height="566" key="find.popup" timestamp="1665491910956">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="480" y="125" width="576" height="566" key="find.popup/0.0.1536.816@0.0.1536.816" timestamp="1665491910956" />
+    <state x="425" y="185" key="run.anything.popup" timestamp="1665495386566">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="425" y="185" key="run.anything.popup/0.0.1536.816@0.0.1536.816" timestamp="1665495386566" />
+    <state x="430" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1670173224286">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="430" y="137" width="672" height="678" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1670173224286" />
+  </component>
+</project>

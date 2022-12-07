@@ -1,0 +1,22 @@
+/* Desktop */
+@media all and (min-width: 1025px) {
+    .main_container {
+        flex-direction: row;
+    }
+
+    .aside {
+        margin-left: 20px;
+    }
+
+    .header__nav {
+        display: flex;
+    }
+
+    header label {
+        display: none;
+    }
+
+    .header__burger-menu {
+        display: none;
+    }
+}

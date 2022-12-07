@@ -1,0 +1,64 @@
+.notification-container {
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+}
+
+.notification {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    transition: all .3s ease;
+    overflow: hidden;
+}
+
+.notification.close {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.notify__icon-el, .notify__remove {
+    width: 10%;
+}
+
+.notify__info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.notify__icon {
+    padding: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ffa12a;
+    color: white;
+    font-size: .9em;
+}
+
+.notify__remove-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all .2s ease;
+}
+
+.notify__remove-btn:hover {
+    color: #c0392b;
+}
+
+.notify__remove-btn * {
+    pointer-events: none;
+}
